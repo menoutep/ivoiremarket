@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+
+{% block title %}Sign up{% endblock title %}
+
+{% block content %}
+<div>xxxxxxxxxx</div>
+
+<div class="col-md-8" style="margin: 0 auto;width:45%; margin-top:3%">
+      
+        <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input class="btn btn-primary" type="submit" value="sign up">
+        </form>
+</div>
+{% endblock content %}
